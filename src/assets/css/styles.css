@@ -1248,6 +1248,8 @@ html[dir="rtl"] .badge {
 
 .header .wrapper-item { flex-wrap: nowrap; }
 
+.header .search-container .wrapper-item { flex-wrap: wrap; }
+
 .header .icon-btn { color: var(--on-background); }
 
 /* ------------------------------------------------------------------ *\
