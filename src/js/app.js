@@ -8,6 +8,7 @@ import { StartLoading } from "./components/StartLoading.js";
 import { Tooltip } from "./components/Tooltip.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Search } from "./components/Search.js";
+import { Swipper } from "./components/Swipper.js";
 
 /**
  * Get Overlay & Body
@@ -45,3 +46,9 @@ if ($fixedScrolling.length) $fixedScrolling.forEach($elem => window.addEventList
  */
 const $search = document.querySelector("[data-search]");
 if ($search) Search($search);
+
+/**
+ * Swippers
+ */
+const $swippers = document.querySelectorAll("[data-swippers]");
+if ($swippers.length) $swippers.forEach($elem => Swipper($elem));
