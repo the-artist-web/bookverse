@@ -797,6 +797,18 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 .progress-bar.hide { opacity: 0; }
 
 /**
+ * Paginations
+ */
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-3);
+    margin-block-start: 30px;
+}
+
+/**
  * App bars
  */
 
@@ -1054,6 +1066,12 @@ html[dir="rtl"] .badge {
 .icon-btn.outline {
     border: 1px solid var(--outline);
     --state-layer-bg: var(--on-background);
+}
+
+.icon-btn.filled {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    --state-layer-bg: var(--on-primary);
 }
 
 /**
@@ -1437,6 +1455,19 @@ html[dir="rtl"] .badge {
     overflow-x: hidden;
 }
 
+.offcanvas.offcanvas-start .offcanvas-body,
+.offcanvas.offcanvas-end .offcanvas-body {
+    padding: 0 var(--spacing-5) var(--spacing-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.offcanvas.offcanvas-start .offcanvas-body .offcanvas-list,
+.offcanvas.offcanvas-end .offcanvas-body .offcanvas-list { padding: 0; }
+
 .offcanvas.offcanvas-start .offcanvas-list .offcanvas-link,
 .offcanvas.offcanvas-end .offcanvas-list .offcanvas-link {
     padding-inline: var(--spacing-4);
@@ -1500,6 +1531,8 @@ html[dir="rtl"] .badge {
     width: 100%;
 }
 
+.form-group:has(.select-wrapper) { max-width: max-content; }
+
 .form-group label { text-transform: capitalize; }
 
 .form-group .input-wrapper {
@@ -1509,6 +1542,84 @@ html[dir="rtl"] .badge {
     padding-inline: var(--spacing-4);
     border-radius: var(--radius-medium);
     width: 100%;
+}
+
+.form-group .input-wrapper.small {
+    min-height: var(--height-small);
+    max-height: var(--height-small);
+}
+
+.form-group .input-wrapper.large {
+    min-height: var(--height-large);
+    max-height: var(--height-large);
+}
+
+.form-group .input-wrapper.outline {
+    border: 1px solid var(--outline);
+    --state-layer-bg: var(--on-background);
+}
+
+.form-group .select-wrapper {
+    position: relative;
+    border-radius: var(--radius-medium);
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+}
+
+.form-group .select-wrapper select { padding-inline-start: var(--spacing-4); }
+
+.form-group .select-wrapper.small select {
+    min-height: var(--height-small);
+    max-height: var(--height-small);
+}
+
+.form-group .select-wrapper.small select { padding-inline-end: var(--width-small); }
+
+.form-group .select-wrapper.small:has(.icon-btn.icon-select) select { padding-inline-start: var(--width-small); }
+
+.form-group .select-wrapper.medium select {
+    min-height: var(--height-medium);
+    max-height: var(--height-medium);
+}
+
+.form-group .select-wrapper.medium select { padding-inline-end: var(--width-medium); }
+
+.form-group .select-wrapper.medium:has(.icon-btn.icon-select) select { padding-inline-start: var(--width-medium); }
+
+.form-group .select-wrapper.large select {
+    min-height: var(--height-large);
+    max-height: var(--height-large);
+}
+
+.form-group .select-wrapper.large select { padding-inline-end: var(--width-large); }
+
+.form-group .select-wrapper.large:has(.icon-btn.icon-select) select { padding-inline-start: var(--width-large); }
+
+.form-group .select-wrapper.outline {
+    border: 1px solid var(--outline);
+    --state-layer-bg: var(--on-background);
+}
+
+.form-group .select-wrapper .icon-btn {
+    pointer-events: none; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-group .select-wrapper .icon-btn.arrow-select { right: 0; }
+
+html[dir="rtl"] .form-group .select-wrapper .icon-btn.arrow-select {
+    left: 0;
+    right: auto;
+}
+
+.form-group .select-wrapper .icon-btn.icon-select { left: 0; }
+
+html[dir="rtl"] .form-group .select-wrapper .icon-btn.icon-select {
+    right: 0;
+    left: auto;
 }
 
 /**
@@ -1864,6 +1975,11 @@ html[dir="rtl"] .hero .img-hero {
     height: 200px;
 }
 
+/**
+ * Books Page
+ */
+.books-page { padding-block-start: 50px; }
+
 /* ------------------------------------------------------------------ *\
  * MEDIA QUERY
 \* ------------------------------------------------------------------ */
@@ -1940,6 +2056,27 @@ html[dir="rtl"] .hero .img-hero {
     .hero .container { grid-template-columns: 340px 1fr; }
 
     .hero .hero-content { margin-inline-start: var(--spacing-8); }
+
+    /* Books Page */
+    .books-page .grid {
+        display: grid;
+        grid-template-columns: 280px minmax(0, 1fr);
+        gap: var(--spacing-8);
+    }
+
+    .books-page .offcanvas {
+        position: sticky;
+        top: calc(var(--header-height) + var(--spacing-4));
+        transform: translate(0) !important;
+        visibility: visible;
+        z-index: 10;
+        border: none;
+        height: max-content;
+        width: 100%;
+    }
+
+    .books-page .offcanvas .offcanvas-body,
+    .books-page .offcanvas .offcanvas-list { padding: 0; }
 }
 
 /**
