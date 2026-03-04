@@ -9,6 +9,9 @@ import { Tooltip } from "./components/Tooltip.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Search } from "./components/Search.js";
 import { Swipper } from "./components/Swipper.js";
+import { ToggleFavorit } from "./components/ToggleFavorits.js";
+import { addEventOnElements } from "./utils.js";
+import { ToggleShoppingCart } from "./components/ToggleShoppingCart.js";
 
 /**
  * Get Overlay & Body
@@ -52,3 +55,15 @@ if ($search) Search($search);
  */
 const $swippers = document.querySelectorAll("[data-swippers]");
 if ($swippers.length) $swippers.forEach($elem => Swipper($elem));
+
+/**
+ * Add To Cart
+ */
+const $toggleShoppingCart = document.querySelectorAll("[data-toggle-shopping-cart]");
+if ($toggleShoppingCart.length) $toggleShoppingCart.forEach($elem => ToggleShoppingCart($elem));
+
+/**
+ * Toggle Favorits
+ */
+const $toggleFavorits = document.querySelectorAll("[data-toggle-favorits]");
+if ($toggleFavorits.length) $toggleFavorits.forEach($elem => ToggleFavorit($elem));
