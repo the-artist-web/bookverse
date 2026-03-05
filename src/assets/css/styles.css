@@ -2592,6 +2592,7 @@ html[dir="rtl"] .hero .img-hero {
  */
 .shopping-card-page .grid {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--spacing-8);
 }
 
