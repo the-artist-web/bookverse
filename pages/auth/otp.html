@@ -14,13 +14,13 @@
     <link rel="shortcut icon" href="" />
 
     <!-- meta tags -->
-    <title>Sign In | Noqta</title>
-    <meta name="title" content="Sign In | Noqta" />
+    <title>Verify your identity | Noqta</title>
+    <meta name="title" content="Verify your identity | Noqta" />
     <meta name="description" content="Description This Page" />
     <meta name="robots" content="index, follow" />
 
     <!-- open graph -->
-    <meta property="og:title" content="Sign In | Noqta" />
+    <meta property="og:title" content="Verify your identity | Noqta" />
     <meta property="og:description" content="Description This Page" />
     <meta property="og:url" content="URL Current" />
     <meta property="og:type" content="website" />
@@ -31,7 +31,7 @@
 
     <!-- twitter card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sign In | Noqta" />
+    <meta name="twitter:title" content="Verify your identity | Noqta" />
     <meta name="twitter:description" content="Description This Page" />
     <meta name="twitter:image" content="" />
     <meta name="twitter:image:alt" content="Noqta" />
@@ -82,67 +82,27 @@
             </a>
 
             <div class="wrapper-block">
-                <h1 class="text-headline-medium text-loard">Welcome Back</h1>
+                <h1 class="text-headline-medium text-loard">Verify your identity</h1>
 
-                <p class="text-body-large text-on-background-variant">Sign in to continue shopping</p>
+                <p class="text-body-large text-on-background-variant">Enter the verification code we sent to your email to gmail@gmail.com</p>
             </div>
 
             <form action="#" method="POST" class="auth-card">
-                <ul class="nav nav-tabs" id="tabAuth">
-                    <li class="nav-item">
-                        <a href="../../pages/auth/register.html" class="nav-link">
-                            <p class="text-body-large">Sign Up</p>
-
-                            <div class="state-layer"></div>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="../../pages/auth/Sign In.html" class="nav-link active">
-                            <p class="text-body-large">Sign In</p>
-
-                            <div class="state-layer"></div>
-                        </a>
-                    </li>
-                </ul>
-
                 <div class="form-group">
-                    <label for="phone_number" class="text-body-medium">Phone Number</label>
-
-                    <div class="input-wrapper medium">
-                        <input type="tel" placeholder="Enter your phone number" name="phone" value="" id="phone_number" class="text-body-large" />
-                    </div>
-
-                    <!-- <p class="text-error text-body-medium"></p> -->
-                </div>
-
-                <div class="form-group">
-                    <div class="wrapper-between">
-                        <label for="password" class="text-body-medium">Password</label>
-
-                        <a href="../../pages/auth/forgot-password.html" class="text-on-background-variant hover">
-                            <p class="text-body-medium">Forgot your password?</p>
-                        </a>
-                    </div>
-
-                    <div class="input-wrapper medium p-end-0" data-passwords>
-                        <input type="password" placeholder="Enter your password" name="password" value="" id="password" class="text-body-large" />
-
-                        <button type="button" class="icon-btn text medium" data-bs-toggle="toggle" data-bs-title="Show Password" data-bs-placement="bottom">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
-
-                            <div class="state-layer"></div>
-                        </button>
+                    <div class="input-wrapper otp medium">
+                        <input type="text" placeholder="Verification code (6 characters)" name="phone" value="" id="phone_number" class="text-body-large" minlength="1" maxlength="6" autofocus />
                     </div>
 
                     <!-- <p class="text-error text-body-medium"></p> -->
                 </div>
 
                 <button type="submit" class="btn filled medium w-full">
-                    <p class="text-body-large">Sign In</p>
+                    <p class="text-body-large">Verify</p>
 
                     <div class="state-layer"></div>
                 </button>
+
+                <p class="text-body-medium text-on-background-variant">Don't get any code? <a href="#" class="btn-link">Resend code</a></p>
             </form>
 
         </div>

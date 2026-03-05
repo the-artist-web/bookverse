@@ -12,6 +12,8 @@ import { Swipper } from "./components/Swipper.js";
 import { ToggleFavorit } from "./components/ToggleFavorits.js";
 import { addEventOnElements } from "./utils.js";
 import { ToggleShoppingCart } from "./components/ToggleShoppingCart.js";
+import { Password } from "./components/Password.js";
+import { Quantite } from "./components/Quantite.js";
 
 /**
  * Get Overlay & Body
@@ -67,3 +69,15 @@ if ($toggleShoppingCart.length) $toggleShoppingCart.forEach($elem => ToggleShopp
  */
 const $toggleFavorits = document.querySelectorAll("[data-toggle-favorits]");
 if ($toggleFavorits.length) $toggleFavorits.forEach($elem => ToggleFavorit($elem));
+
+/**
+ * Password
+ */
+const $passwords = document.querySelectorAll("[data-passwords]");
+if ($passwords.length) $passwords.forEach($elem => Password($elem));
+
+/**
+ *  Quantites
+ */
+const $quantites = document.querySelectorAll("[data-quantites]");
+if ($quantites.length) $quantites.forEach($elem => Quantite($elem));
