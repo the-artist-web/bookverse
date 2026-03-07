@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- canonical -->
+    <link rel="canonical" href="URL Current" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../src/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="../src/assets/images/favicon.png" />
+
+    <!-- meta tags -->
+    <title>Checkout | Noqta</title>
+    <meta name="title" content="Checkout | Noqta" />
+    <meta name="description" content="Description This Page" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- open graph -->
+    <meta property="og:title" content="Checkout | Noqta" />
+    <meta property="og:description" content="Description This Page" />
+    <meta property="og:url" content="URL Current" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="Noqta" />
+    <meta property="og:site_name" content="Noqta" />
+    <meta property="og:locale" content="en" />
+
+    <!-- twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Checkout | Noqta" />
+    <meta name="twitter:description" content="Description This Page" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:image:alt" content="Noqta" />
+    <meta name="twitter:url" content="URL Current" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+
+    <!-- custom aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+    <!-- custom bootstrap link -->
+    <link rel="stylesheet" href="../src/assets/bootstrap/bootstrap.min.css" />
+    <script src="../src/assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="../src/assets/css/styles.css" />
+
+    <!-- custom js link -->
+    <script src="../src/js/aos.js" type="module"></script>
+    <script src="../src/js/app.js" type="module"></script>
+
+</head>
+
+<body>
+
+    <!-- Overlay & Progress Bar -->
+    <div class="overlay" data-overlay></div>
+    <div class="progress-bar" data-progress-bar></div>
+
+    <!-- Start Loading -->
+    <div class="start-loading" data-start-loading>
+        <div class="logo extra-large">
+            <img src="../src/assets/images/logo.png" alt="noqta" class="img-logo img-cover" />
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" data-search data-fixed-scrolling>
+
+        <div class="container container-xl">
+
+            <a href="../index.html" class="logo small" data-header-items>
+                <img src="../src/assets/images/logo.png" alt="noqta" loading="lazy" class="img-logo img-cover" />
+            </a>
+
+            <div class="search-container" data-search-container>
+
+                <form action="" method="GET" class="search">
+                    <button type="submit" class="icon-btn arrow-dir small">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                    </button>
+
+                    <input type="search" placeholder="Search all of noqta" name="search" value="" class="text-body-medium" autocomplete="off" data-input-search />
+                </form>
+
+                <ul class="search-bar custom-scrollbar" data-search-bar>
+
+                    <li>
+                        <a href="../pages/books/index.html" class="search-bar-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+
+                            <p class="text-body-medium line-clamp line-clamp-1">Hamlet</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/books/index.html" class="search-bar-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+
+                            <p class="text-body-medium line-clamp line-clamp-1">Macbeth</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/books/index.html" class="search-bar-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+
+                            <p class="text-body-medium line-clamp line-clamp-1">Dracula</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <div class="search-bar-link">
+                            <div class="wrapper-between">
+                                <p class="text-body-medium text-uppercase">Vendors</p>
+                                
+                                <a href="../pages/vendors.html" class="btn-link">
+                                    <p class="text-body-medium">See All</p>
+    
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                    </div>                                
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="../pages/users/profile.html" class="search-bar-link">
+                            <div class="avatar small">
+                                <img src="https://cdn.dribbble.com/users/1057940/avatars/small/f068710cc8e5fcebcbcd8f1f75d1b4ef.gif?1732126488" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium line-clamp line-clamp-1">Youssef</p>
+                                
+                                <p class="text-body-medium text-on-background-variant">1M Book</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/users/profile.html" class="search-bar-link">
+                            <div class="avatar small">
+                                <img src="https://cdn.dribbble.com/users/207046/avatars/small/3cf440965628a56a521da9fdc45011ac.png?1710421930" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium line-clamp line-clamp-1">Mohammed Art</p>
+                                
+                                <p class="text-body-medium text-on-background-variant">254 Book</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/users/profile.html" class="search-bar-link">
+                            <div class="avatar small">
+                                <img src="https://cdn.dribbble.com/users/17111268/avatars/small/5db6c53ac82e33cf31384ed081d75810.png?1756381575" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium line-clamp line-clamp-1">Ahmed Hassem</p>
+                                
+                                <p class="text-body-medium text-on-background-variant">142 Book</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <ul class="nav-list desktop">
+
+                <li>
+                    <a href="../index.html" class="nav-link">
+                        <p class="text-body-medium">Home</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/about-us.html" class="nav-link">
+                        <p class="text-body-medium">About Us</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/books/index.html" class="nav-link">
+                        <p class="text-body-medium">Books</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/categories.html" class="nav-link">
+                        <p class="text-body-medium">Categories</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/vendors.html" class="nav-link">
+                        <p class="text-body-medium">Vendors</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/contact-us.html" class="nav-link">
+                        <p class="text-body-medium">Contact Us</p>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="wrapper-item gap-0" data-header-items>
+
+                <button type="button" class="icon-btn text small" data-open-search data-bs-toggle="tooltip" data-bs-title="Search" data-bs-placement="bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+
+                    <div class="state-layer"></div>
+                </button>
+
+                <a href="../pages/users/favorits.html" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Favorits" data-bs-placement="bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+
+                    <span class="badge" id="count-favorits"></span>
+
+                    <div class="state-layer"></div>
+                </a>
+
+                <a href="../pages/users/shopping-cart.html" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Shopping Cart" data-bs-placement="bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+
+                    <span class="badge" id="count-shopping-cart"></span>
+
+                    <div class="state-layer"></div>
+                </a>
+
+                <div class="dropdown desktop">
+                    <span data-bs-toggle="dropdown">
+                        <button type="button" class="avatar small" data-bs-toggle="tooltip" data-bs-title="username" data-bs-placement="bottom">
+                            <img src="https://cdn.dribbble.com/users/17111268/avatars/small/5db6c53ac82e33cf31384ed081d75810.png?1756381575" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                        
+                            <div class="state-layer"></div>
+                        </button>
+                    </span>
+
+                    <ul class="dropdown-menu dropdown-menu-end small custom-scrollbar">
+
+                        <li>
+                            <a href="../pages/users/profile.html" class="dropdown-item">
+                                <div class="avatar small">
+                                    <img src="https://cdn.dribbble.com/users/17111268/avatars/small/5db6c53ac82e33cf31384ed081d75810.png?1756381575" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </div>
+
+                                <div class="wrapper-content gap-0">
+                                    <p class="text-body-medium text-on-background line-clamp line-clamp-1">Mohammed Art</p>
+                                    
+                                    <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@mohammedart</p>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li class="separator x"></li>
+
+                        <li>
+                            <a href="../pages/users/profile.html" class="dropdown-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                <p class="text-body-medium">Profile</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../pages/users/favorits.html" class="dropdown-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+
+                                <p class="text-body-medium">Favorits</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../pages/users/orders/index.html" class="dropdown-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M11.5 17h-5.5v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /><path d="M15 19l2 2l4 -4" /></svg>
+
+                                <p class="text-body-medium">Orders</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li class="separator x"></li>
+
+                        <li>
+                            <a href="../pages/users/edit-profile.html" class="dropdown-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+
+                                <p class="text-body-medium">Edit Profile</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <form action="" method="POST">
+                                <button type="submit" class="dropdown-item error">
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-logout-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" /><path d="M15 12h-12l3 -3" /><path d="M6 15l-3 -3" /></svg>
+                                    </div>
+    
+                                    <p class="text-body-medium">Logout</p>
+    
+                                    <div class="state-layer"></div>
+                                </button>
+                            </form>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <a href="../pages/auth/login.html" class="btn outline small desktop">
+                    <p class="text-body-medium">Login</p>
+
+                    <div class="state-layer"></div>
+                </a>
+
+                <a href="../pages/auth/register.html" class="btn filled small desktop">
+                    <p class="text-body-medium">Join noqta</p>
+
+                    <div class="state-layer"></div>
+                </a> -->
+
+                <span class="mobile" data-bs-toggle="offcanvas" data-bs-target="#sideSheet">
+                    <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Open Menu" data-bs-placement="bottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+
+                        <div class="state-layer"></div>
+                    </button>
+                </span>
+
+            </div>
+            
+        </div>
+
+    </header>
+
+    <!-- Side Sheet -->
+    <aside class="offcanvas offcanvas-end" id="sideSheet">
+        
+        <div class="offcanvas-header">
+            <a href="../index.html" class="logo small" data-header-items="">
+                <img src="../src/assets/images/logo.png" alt="noqta" loading="lazy" class="img-logo img-cover">
+            </a>
+
+            <span data-bs-dismiss="offcanvas">
+                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                    
+                    <div class="state-layer"></div>
+                </button>
+            </span>
+        </div>
+
+        <ul class="offcanvas-list custom-scrollbar">
+
+            <li>
+                <a href="../index.html" class="offcanvas-link">
+                    <p class="text-body-medium">Home</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="../pages/about-us.html" class="offcanvas-link">
+                    <p class="text-body-medium">About Us</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="../pages/books/index.html" class="offcanvas-link">
+                    <p class="text-body-medium">Books</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="../pages/categories.html" class="offcanvas-link">
+                    <p class="text-body-medium">Categories</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="../pages/vendors.html" class="offcanvas-link">
+                    <p class="text-body-medium">Vendors</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="../pages/contact-us.html" class="offcanvas-link">
+                    <p class="text-body-medium">Contact Us</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="offcanvas-footer">
+
+            <a href="../pages/users/profile.html" class="flex gap-3">
+                <div class="avatar small">
+                    <img src="https://cdn.dribbble.com/users/17111268/avatars/small/5db6c53ac82e33cf31384ed081d75810.png?1756381575" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                </div>
+
+                <div class="wrapper-content gap-0">
+                    <p class="text-body-medium line-clamp line-clamp-1">Mohammed Art</p>
+                    
+                    <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@mohammedart</p>
+                </div>
+
+                <div class="state-layer"></div>
+            </a>
+
+            <div class="wrapper" style="row-gap: var(--spacing-2);">
+                <a href="../pages/users/profile.html" class="hover text-on-background-variant">
+                    <p class="text-body-medium">Profile</p>
+    
+                    <div class="state-layer"></div>
+                </a>
+    
+                <a href="../pages/users/favorits.html" class="hover text-on-background-variant">
+                    <p class="text-body-medium">Favorits</p>
+    
+                    <div class="state-layer"></div>
+                </a>
+    
+                <a href="../pages/users/orders/index.html" class="hover text-on-background-variant">
+                    <p class="text-body-medium">Orders</p>
+    
+                    <div class="state-layer"></div>
+                </a>
+    
+                <a href="../pages/users/edit-profile.html" class="hover text-on-background-variant">
+                    <p class="text-body-medium">Edit Profile</p>
+    
+                    <div class="state-layer"></div>
+                </a>
+    
+                <form action="" method="POST" style="max-width: max-content;">
+                    <button type="submit" class="hover text-on-background-variant">
+                        <p class="text-body-medium">Logout</p>
+    
+                        <div class="state-layer"></div>
+                    </button>
+                </form>
+            </div>
+
+            <!-- <div class="wrapper-block">
+                <a href="../pages/auth/login.html" class="btn outline small w-full">
+                    <p class="text-body-medium">Login</p>
+
+                    <div class="state-layer"></div>
+                </a>
+
+                <a href="../pages/auth/register.html" class="btn filled small w-full">
+                    <p class="text-body-medium">Join noqta</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </div> -->
+
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <article>
+            
+            <!-- Checkout -->
+            <section class="checkout page section">
+
+                <div class="container container-xl">
+
+                    <div class="title-sec">
+                        <div class="wrapper-content">
+                            <h1 class="text-headline-large text-loard">Checkout</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+
+                        <div class="sections">
+
+                            <div class="card filled outline">
+                                <div class="card-body form-card">
+
+                                    <div class="flex">
+                                        <span class="text-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                        </span>
+
+                                        <h5 class="text-title-medium text-loard">Account</h5>
+                                    </div>
+
+                                    <ul class="nav nav-tabs" id="tabCheckoutAuth">
+                                        <li class="nav-item">
+                                            <button type="button" class="nav-link active" id="sign-in-tab" data-bs-toggle="tab" data-bs-target="#sign-in">
+                                                <div class="flex">
+                                                    <span class="text-primary arrow-dir">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right-to-arc"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h12" /><path d="M11 8l4 4l-4 4" /><path d="M12 21a9 9 0 0 0 0 -18" /></svg>
+                                                    </span>
+
+                                                    <p class="text-body-medium text-loard">Sign In</p>
+                                                </div>
+
+                                                <p class="text-body-small text-on-background-variant">Faster checkout</p>
+                                            </button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <button type="button" class="nav-link" id="guest-tab" data-bs-toggle="tab" data-bs-target="#guest">
+                                                <div class="flex">
+                                                    <span class="text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                                    </span>
+
+                                                    <p class="text-body-medium text-loard">Guest</p>
+                                                </div>
+
+                                                <p class="text-body-small text-on-background-variant">No account needed</p>
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" id="tabCheckoutAuth">
+                                        <div class="tab-pane fade show active" id="sign-in">
+
+                                            <div class="form-card p-0">
+
+                                                <div class="form-group">
+                                                    <label for="phone_number" class="text-body-medium">Phone Number</label>
+
+                                                    <div class="input-wrapper medium">
+                                                        <input type="tel" placeholder="Enter your phone number" name="phone" value="" id="phone_number" class="text-body-large" />
+                                                    </div>
+
+                                                    <!-- <p class="text-error text-body-medium"></p> -->
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="password" class="text-body-medium">Password</label>
+
+                                                    <div class="input-wrapper medium p-end-0" data-passwords>
+                                                        <input type="password" placeholder="Enter your password" name="password" value="" id="password" class="text-body-large" />
+
+                                                        <button type="button" class="icon-btn text medium" data-bs-toggle="toggle" data-bs-title="Show Password" data-bs-placement="bottom">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+
+                                                            <div class="state-layer"></div>
+                                                        </button>
+                                                    </div>
+
+                                                    <!-- <p class="text-error text-body-medium"></p> -->
+                                                </div>
+
+                                                <div class="wrapper">
+                                                    <button type="submit" class="btn outline small p-start-0">
+                                                        <div class="icon-btn small arrow-dir">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right-to-arc"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h12" /><path d="M11 8l4 4l-4 4" /><path d="M12 21a9 9 0 0 0 0 -18" /></svg>
+                                                        </div>
+
+                                                        <p class="text-body-medium">Sign In</p>
+
+                                                        <div class="state-layer"></div>
+                                                    </button>
+
+                                                    <a href="../pages/auth/register.html" class="btn-link">
+                                                        <p class="text-body-medium">Don't have an account? Sign up</p>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="guest"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card filled outline">
+                                <div class="card-body form-card">
+
+                                    <h5 class="text-title-medium text-loard">Shipping Information</h5>
+
+                                    <div class="grid-2-base">
+
+                                        <div class="form-group">
+                                            <label for="first_name" class="text-body-medium">First Name</label>
+
+                                            <div class="input-wrapper medium">
+                                                <input type="text" placeholder="Enter your first name" name="" value="" id="first_name" class="text-body-large" />
+                                            </div>
+
+                                            <!-- <p class="text-error text-body-medium"></p> -->
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="last_name" class="text-body-medium">Last Name</label>
+
+                                            <div class="input-wrapper medium">
+                                                <input type="text" placeholder="Enter your last name" name="" value="" id="last_name" class="text-body-large" />
+                                            </div>
+
+                                            <!-- <p class="text-error text-body-medium"></p> -->
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email" class="text-body-medium">Email Address</label>
+
+                                        <div class="input-wrapper medium">
+                                            <input type="email" placeholder="Enter your email address" name="" value="" id="email" class="text-body-large" />
+                                        </div>
+
+                                        <!-- <p class="text-error text-body-medium"></p> -->
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="tel" class="text-body-medium">Phone Number</label>
+
+                                        <div class="input-wrapper medium">
+                                            <input type="tel" placeholder="Enter your phone number" name="" value="" id="tel" class="text-body-large" />
+                                        </div>
+
+                                        <!-- <p class="text-error text-body-medium"></p> -->
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="address" class="text-body-medium">Address</label>
+
+                                        <div class="input-wrapper medium">
+                                            <input type="text" placeholder="Enter your address" name="" value="" id="address" class="text-body-large" />
+                                        </div>
+
+                                        <!-- <p class="text-error text-body-medium"></p> -->
+                                    </div>
+
+                                    <div class="grid-2-base">
+
+                                        <div class="form-group">
+                                            <label for="city" class="text-body-medium">City</label>
+
+                                            <div class="input-wrapper medium">
+                                                <input type="text" placeholder="Enter your city" name="" value="" id="city" class="text-body-large" />
+                                            </div>
+
+                                            <!-- <p class="text-error text-body-medium"></p> -->
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="state" class="text-body-medium">State</label>
+
+                                            <div class="input-wrapper medium">
+                                                <input type="text" placeholder="Enter your state" name="" value="" id="state" class="text-body-large" />
+                                            </div>
+
+                                            <!-- <p class="text-error text-body-medium"></p> -->
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="zip_code" class="text-body-medium">ZIP Code</label>
+
+                                            <div class="input-wrapper medium">
+                                                <input type="text" placeholder="Enter your zip code" name="" value="" id="zip_code" class="text-body-large" />
+                                            </div>
+
+                                            <!-- <p class="text-error text-body-medium"></p> -->
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="country" class="text-body-medium">Country</label>
+
+                                            <div class="input-wrapper medium">
+                                                <input type="text" placeholder="Enter your country" name="" value="" id="country" class="text-body-large" />
+                                            </div>
+
+                                            <!-- <p class="text-error text-body-medium"></p> -->
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card filled outline">
+                                <div class="card-body form-card">
+
+                                    <div class="flex">
+                                        <span class="text-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-lock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6" /><path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M8 11v-4a4 4 0 1 1 8 0v4" /></svg>
+                                        </span>
+
+                                        <h5 class="text-title-medium text-loard">Payment Method</h5>
+                                    </div>
+
+                                    <ul class="nav nav-tabs" id="tabPaymentMethod">
+                                        <li class="nav-item">
+                                            <button type="button" class="nav-link active" id="cart-tab" data-bs-toggle="tab" data-bs-target="#cart">
+                                                <div class="flex">
+                                                    <span class="text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3l0 -8" /><path d="M3 10l18 0" /><path d="M7 15l.01 0" /><path d="M11 15l2 0" /></svg>
+                                                    </span>
+    
+                                                    <p class="text-body-medium">Cart</p>
+                                                </div>
+                                            </button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <button type="button" class="nav-link" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal">
+                                                <div class="flex">
+                                                    <span class="text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-paypal"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 13l2.5 0c2.5 0 5 -2.5 5 -5c0 -3 -1.9 -5 -5 -5h-5.5c-.5 0 -1 .5 -1 1l-2 14c0 .5 .5 1 1 1h2.8l1.2 -5c.1 -.6 .4 -1 1 -1m7.5 -5.8c1.7 1 2.5 2.8 2.5 4.8c0 2.5 -2.5 4.5 -5 4.5h-2.6l-.6 3.6a1 1 0 0 1 -1 .8l-2.7 0a.5 .5 0 0 1 -.5 -.6l.2 -1.4" /></svg>
+                                                    </span>
+    
+                                                    <p class="text-body-edium">PayPal</p>
+                                                </div>
+                                            </button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <button type="button" class="nav-link" id="cod-tab" data-bs-toggle="tab" data-bs-target="#cod">
+                                                <div class="flex">
+                                                    <span class="text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-currency-dollar"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2" /><path d="M12 3v3m0 12v3" /></svg>
+                                                    </span>
+    
+                                                    <p class="text-body-edium">COD</p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" id="tabPaymentMethod">
+
+                                        <div class="tab-pane fade show active" id="cart">
+                                            <div class="form-card p-0">
+
+                                                <div class="form-group">
+                                                    <label for="cardholder_name" class="text-body-medium">Cardholder Name</label>
+
+                                                    <div class="input-wrapper medium">
+                                                        <input type="text" placeholder="Enter your cardholder name" name="" value="" id="cardholder_name" class="text-body-large" />
+                                                    </div>
+
+                                                    <!-- <p class="text-error text-body-medium"></p> -->
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="card_number" class="text-body-medium">card number</label>
+
+                                                    <div class="input-wrapper medium">
+                                                        <input type="text" placeholder="4242 4242 4242 4242" name="" value="" id="card_number" class="text-body-large" />
+                                                    </div>
+
+                                                    <!-- <p class="text-error text-body-medium"></p> -->
+                                                </div>
+
+                                                <div class="grid-2-base">
+
+                                                    <div class="form-group">
+                                                        <label for="date" class="text-body-medium">Expiry Date</label>
+
+                                                        <div class="input-wrapper medium">
+                                                            <input type="date" name="" value="" id="date" class="text-body-large" />
+                                                        </div>
+
+                                                        <!-- <p class="text-error text-body-medium"></p> -->
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="CVV" class="text-body-medium">CVV</label>
+
+                                                        <div class="input-wrapper medium">
+                                                            <input type="text" placeholder="123" name="" value="" id="CVV" class="text-body-large" />
+                                                        </div>
+
+                                                        <!-- <p class="text-error text-body-medium"></p> -->
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="paypal">
+
+                                            <div class="card background">
+
+                                                <div class="card-body align-items-center text-center">
+
+                                                    <span class="icon-big text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-paypal"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 13l2.5 0c2.5 0 5 -2.5 5 -5c0 -3 -1.9 -5 -5 -5h-5.5c-.5 0 -1 .5 -1 1l-2 14c0 .5 .5 1 1 1h2.8l1.2 -5c.1 -.6 .4 -1 1 -1m7.5 -5.8c1.7 1 2.5 2.8 2.5 4.8c0 2.5 -2.5 4.5 -5 4.5h-2.6l-.6 3.6a1 1 0 0 1 -1 .8l-2.7 0a.5 .5 0 0 1 -.5 -.6l.2 -1.4" /></svg>
+                                                    </span>
+
+                                                    <div class="wrapper-content">
+                                                        <p class="text-body-medium">You will be redirected to PayPal</p>
+
+                                                        <p class="text-body-medium text-on-background-variant">Complete your payment securely through PayPal</p>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="cod">
+
+                                            <div class="card background">
+
+                                                <div class="card-body align-items-center text-center">
+
+                                                    <span class="icon-big text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-currency-dollar"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2" /><path d="M12 3v3m0 12v3" /></svg>
+                                                    </span>
+
+                                                    <div class="wrapper-content">
+                                                        <p class="text-body-medium">Cash on Delivery</p>
+
+                                                        <p class="text-body-medium text-on-background-variant">Pay when you receive your order. Additional $2.99 COD fee applies.</p>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="card filled outline checkout-sticky">
+
+                            <div class="card-body form-card">
+
+                                <h5 class="text-title-medium text-loard">Order Summary</h5>
+
+                                <div class="wrapper-block">
+                                    <div class="wrapper-between text-on-background-variant">
+                                        <p class="text-body-medium">Atomic Habits × 1</p>
+    
+                                        <p class="text-body-medium text-on-background-vairant">$16.99</p>
+                                    </div>
+                                </div>
+
+                                <div class="separator x"></div>
+
+                                <form action="#" method="POST" class="form-group">
+                                    <label for="code" class="flex">
+                                        <span class="text-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag h-4 w-4 text-primary"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
+                                        </span>
+
+                                        <p class="text-body-medium text-loard">Coupon Code</p>
+                                    </label>
+
+                                    <div class="flex">
+                                        <div class="input-wrapper small">
+                                            <input type="text" placeholder="Enter Code" name="" value="" id="code" class="text-body-medium" />
+                                        </div>
+
+                                        <button type="button" class="btn outline small">
+                                            <p class="text-body-medium">Apply</p>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+                                    </div>
+
+                                    <p class="text-body-small text-on-background-variant">Try: BOOKS10 or SAVE5</p>
+                                </form>
+
+                                <div class="wrapper-block">
+                                    <div class="separator x"></div>
+
+                                    <div class="wrapper-between text-on-background-variant">
+                                        <p class="text-body-medium">Subtotal</p>
+
+                                        <p class="text-body-medium text-on-background-vairant">$31.98</p>
+                                    </div>
+
+                                    <div class="wrapper-between text-on-background-variant">
+                                        <p class="text-body-medium">Shipping</p>
+
+                                        <p class="text-body-medium text-on-background-vairant">Free</p>
+                                    </div>
+
+                                    <div class="separator x"></div>
+
+                                    <div class="wrapper-between">
+                                        <p class="text-body-medium">Total</p>
+
+                                        <p class="text-body-medium text-primary">$31.98</p>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn filled medium w-full">
+                                    <p class="text-body-large">Place Order</p>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="container container-xl">
+
+                <div class="grid-4-base">
+
+                    <div class="column">
+                        <a href="../index.html" class="logo small" data-header-items>
+                            <img src="../src/assets/images/logo.png" alt="noqta" loading="lazy" class="img-logo img-cover" />
+                        </a>
+
+                        <p class="text-on-background-variant text-body-medium">Your trusted multi-vendor marketplace for discovering and purchasing books from independent sellers worldwide.</p>
+                    </div>
+
+                    <div class="column">
+                        <h6 class="text-title-small text-capitalize text-loard">Quick Links</h6>
+
+                        <ul class="wrapper-block">
+
+                            <li>
+                                <a href="../pages/books/index.html" class="hover text-on-background-variant text-capitalize">
+                                    <p class="text-body-medium">All Books</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../pages/categories.html" class="hover text-on-background-variant text-capitalize">
+                                    <p class="text-body-medium">Categories</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../pages/about-us.html" class="hover text-on-background-variant text-capitalize">
+                                    <p class="text-body-medium">About Us</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../pages/contact-us.html" class="hover text-on-background-variant text-capitalize">
+                                    <p class="text-body-medium">Contact Us</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h6 class="text-title-small text-capitalize text-loard">Customer Service</h6>
+
+                        <ul class="wrapper-block">
+
+                            <li>
+                                <a href="../pages/faqs.html" class="hover text-on-background-variant text-capitalize">
+                                    <p class="text-body-medium">FAQ</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../pages/shipping-Info.html" class="hover text-on-background-variant text-capitalize">
+                                    <p class="text-body-medium">Shipping Info</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../pages/returns-policy.html" class="hover text-on-background-variant text-capitalize">
+                                    <p class="text-body-medium">Returns Policy</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../pages/privacy-policy.html" class="hover text-on-background-variant text-capitalize">
+                                    <p class="text-body-medium">Privacy Policy</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h6 class="text-title-small text-capitalize text-loard">Contact Us</h6>
+
+                        <ul class="wrapper-block">
+
+                            <li>
+                                <a href="mailto:" class="flex hover">
+                                    <div class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                                    </div>
+
+                                    <p class="text-body-medium text-on-background-variant hover">hello@bookverse.com</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="tel:" class="flex hover">
+                                    <div class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+                                    </div>
+
+                                    <p class="text-body-medium text-on-background-variant hover">+1(555) 123-4567</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="flex">
+                                    <div class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" /></svg>
+                                    </div>
+
+                                    <p class="text-body-medium text-on-background-variant">123 Book Street, Literary City, BK 10001</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container container-xl">
+
+                <p class="text-body-medium text-on-background-variant">&copy; 2026 BookVerse. All rights reserved.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
