@@ -1175,6 +1175,48 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 .markdown blockquote:last-child { margin-block-end: 0 !important; }
 
 /**
+ * Data Table
+ */
+.data-table {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+/**
+ * Table
+ */
+.tabler-overflow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    border-radius: var(--radius-medium);
+    border: 1px solid var(--outline);
+}
+ 
+.table {
+    background-color: var(--surface-variant);
+    margin: 0 !important;
+}
+
+.table thead tr th {
+    background-color: var(--surface);
+    color: var(--on-background-variant);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.table th,
+.table td {
+    border-bottom: 1px solid var(--outline);
+    padding: var(--spacing-3);
+    vertical-align: middle;
+    text-wrap: nowrap;
+}
+
+/**
  * App bars
  */
 
@@ -1303,6 +1345,24 @@ html[dir="rtl"] .badge {
     background-color: var(--soft-success) !important;
     color: var(--success) !important;
     --state-layer-bg: var(--success);
+}
+
+.btn.tonal.error {
+    background-color: var(--soft-error) !important;
+    color: var(--error) !important;
+    --state-layer-bg: var(--error);
+}
+
+.btn.tonal.info {
+    background-color: var(--soft-info) !important;
+    color: var(--info) !important;
+    --state-layer-bg: var(--info);
+}
+
+.btn.tonal.warning {
+    background-color: var(--soft-warning) !important;
+    color: var(--warning) !important;
+    --state-layer-bg: var(--warning);
 }
 
 .btn.filled {
